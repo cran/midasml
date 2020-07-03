@@ -544,6 +544,7 @@ sgl_fit <- function(X, Z, y, index, lambdas, gamma_w=NULL, l1_factor=NULL, l21_f
 #' @return predZ - dummies prediction.
 #' @return predX - covariates prediction.
 #' @examples 
+#' \donttest{
 #' set.seed(1)
 #' t <- 21; n = 20; p = 100; size.groups = 4 
 #' index <- ceiling(1:p / size.groups)
@@ -557,6 +558,7 @@ sgl_fit <- function(X, Z, y, index, lambdas, gamma_w=NULL, l1_factor=NULL, l21_f
 #'          regress_choice = "fe", method_choice = "ic", 
 #'          num_cores = 2, verbose = FALSE)
 #' predict.panel_sgl(object = fit, newX = X, newZ = Z, regress_choice = "fe")$pred
+#' }
 #' @author Jonas Striaukas
 #' @method predict panel_sgl
 #' @rdname predict.panel_sgl

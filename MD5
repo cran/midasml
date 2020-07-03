@@ -1,15 +1,15 @@
-85f0a3f53fe23ab5e88edf5d4d63ad2d *DESCRIPTION
+bcd64dce1ead92042c9573c87ff898be *DESCRIPTION
 5ae475e5206214780f4dd3406651749e *NAMESPACE
 940eb9d86410f905e2c4743dd449dcd3 *R/RcppExports.R
 242a61031015c7a21274367eea1d6c97 *R/data.R
-c25bec1124547ee88bc9c37438bde8f0 *R/fit_sgl.R
+5af41b5fde4fb5dcb4cdbae04b9da5ee *R/fit_sgl.R
 f0b168c761b1a65741de3c160c4249c2 *R/help_functions.R
 a46c654d8d923e4d9f7c485b699f99b7 *R/loss_functions.R
 32da658fb1a0154a29ae10fcaf3d1cb8 *R/midas_functions.R
 c1ded28722f66551a5a088fe4f4dafa7 *R/midasml_functions.R
 b0ba76f5ee33f694490d81ab32fabab1 *R/polynomial_functions.R
 6b343b40a5757890b0b721c0e5d74a73 *README.md
-3540c47b9ac63178bf08b33ab33fc02a *build/partial.rdb
+43fe7eb984ec7404c771e1532cc4ae04 *build/partial.rdb
 0362329ea3127847c3e67c26b1e7b364 *data/macro_midasml.RData
 4eb433491dad630758244039ff483044 *data/market_ret.RData
 d57a1cb6305d73a422e0671b8bdd1124 *data/us_rgdp.RData
@@ -53,7 +53,7 @@ e1535d88ffadc8771adfc21cfc4e965e *man/monthEnd.Rd
 4d3bfa08d2eefd6c7dbf9917b4228103 *man/path_calc.Rd
 699090c5637d1842af964ba2770aca00 *man/path_calc_panel.Rd
 e868476bbe80a114e08cbb07dfc0ffc8 *man/plot_weights.Rd
-b0ff6627454251eb2cf389d2615b6de7 *man/predict.panel_sgl.Rd
+b2cf3a11ae9c07fc6dcfe530945c8c84 *man/predict.panel_sgl.Rd
 4b35e17d61d7675b49f42bcebfffa953 *man/predict.reg_sgl.Rd
 ef3c4c5cf984a11342ff24b3610c7380 *man/qtarget.sort_midasml.Rd
 1968f9151410f038f70c55c13bc3513b *man/rbeta_w.Rd
