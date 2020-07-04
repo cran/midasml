@@ -2,7 +2,7 @@ Package: midasml
 Type: Package
 Title: Estimation and Prediction Methods for High-Dimensional Mixed
         Frequency Time Series Data
-Version: 0.0.3
+Version: 0.0.4
 Authors@R: person("Jonas", "Striaukas", email = "jonas.striaukas@gmail.com", role = c("aut", "cre"))
 Author: Jonas Striaukas [aut, cre]
 Maintainer: Jonas Striaukas <jonas.striaukas@gmail.com>
@@ -17,6 +17,6 @@ LinkingTo: Rcpp, RcppArmadillo
 Encoding: UTF-8
 RoxygenNote: 7.1.0
 NeedsCompilation: yes
-Packaged: 2020-07-03 15:13:34 UTC; striaukas
+Packaged: 2020-07-04 09:34:33 UTC; striaukas
 Repository: CRAN
-Date/Publication: 2020-07-03 16:40:11 UTC
+Date/Publication: 2020-07-04 22:50:15 UTC
