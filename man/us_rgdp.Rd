@@ -5,13 +5,13 @@
 \alias{us_rgdp}
 \title{US real GDP data with several high-frequency predictors}
 \format{
-A \code{\link{data.frame}} object.a
+A \code{\link{list}} object.a
 }
 \source{
-\code{rgdp} - \href{https://fred.stlouisfed.org/}{FRED} \cr
-  \code{cfnai} - \href{https://www.chicagofed.org/research/data/cfnai/current-data}{Chicago Fed website} \cr
-  \code{payems} - \href{https://fred.stlouisfed.org/}{FRED} \cr
-  \code{ads} - \href{https://www.philadelphiafed.org/research-and-data/real-time-center/business-conditions-index}{Philadelphia Fed website}
+\href{https://fred.stlouisfed.org/series/GDPC1}{rgdp} \cr
+  \href{https://www.chicagofed.org/research/data/cfnai/current-data}{cfnai} \cr
+  \href{https://fred.stlouisfed.org/series/PAYEMS}{payems} \cr
+  \href{https://www.philadelphiafed.org/research-and-data/real-time-center/business-conditions-index}{ads}
 }
 \usage{
 data(us_rgdp)

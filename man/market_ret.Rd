@@ -8,7 +8,7 @@
 A \code{\link{data.frame}} object.a
 }
 \source{
-\code{rgdp} - \href{https://fred.stlouisfed.org/}{FRED}
+\code{market_ret} - \href{https://fred.stlouisfed.org/series/SP500}{FRED}
 }
 \usage{
 data(market_ret)
