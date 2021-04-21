@@ -2,7 +2,7 @@ Package: midasml
 Type: Package
 Title: Estimation and Prediction Methods for High-Dimensional Mixed
         Frequency Time Series Data
-Version: 0.1.0
+Version: 0.1.2
 Authors@R: c(
     person("Jonas", "Striaukas",  role = c("cre","aut"), email =  "jonas.striaukas@gmail.com"),
     person("Andrii", "Babii",  role = c("aut"), 
@@ -15,16 +15,16 @@ Maintainer: Jonas Striaukas <jonas.striaukas@gmail.com>
 Description: The 'midasml' package implements estimation and prediction methods for high-dimensional mixed-frequency (MIDAS) time-series and panel data regression models. The regularized MIDAS models are estimated using orthogonal (e.g. Legendre) polynomials and sparse-group LASSO (sg-LASSO) estimator. For more information on the `midasml' approach see Babii, Ghysels, and Striaukas (2021, JBES forthcoming) <doi:10.1080/07350015.2021.1899933>. The package is equipped with the fast implementation of the sg-LASSO estimator by means of proximal block coordinate descent. High-dimensional mixed frequency time-series data can also be easily manipulated with functions provided in the package.
 BugReports: https://github.com/jstriaukas/midasml/issues
 License: GPL (>= 2)
-Depends: Matrix, R (>= 2.10)
-Imports: graphics, stats, mcGlobaloptim, methods, lubridate
+Depends: Matrix, R (>= 3.5.0)
+Imports: foreach, graphics, mcGlobaloptim, methods, lubridate, stats
 Encoding: UTF-8
 RoxygenNote: 7.1.0
 NeedsCompilation: yes
-Packaged: 2021-04-14 09:56:18 UTC; striaukas
+Packaged: 2021-04-21 15:10:29 UTC; striaukas
 Author: Jonas Striaukas [cre, aut],
   Andrii Babii [aut],
   Eric Ghysels [aut],
   Alex Kostrov [ctb] (Contributions to analytical gradients for
     non-linear low-dimensional MIDAS estimation code)
 Repository: CRAN
-Date/Publication: 2021-04-14 12:00:02 UTC
+Date/Publication: 2021-04-22 00:10:06 UTC
