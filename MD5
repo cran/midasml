@@ -1,4 +1,4 @@
-5b644659e6edd29e3895fae1fa880150 *DESCRIPTION
+452d078654597505bd17142d6b1ed39a *DESCRIPTION
 31352510f46b5f7ca35ff1395dd39b94 *NAMESPACE
 61e8db2d6fd76e5ffee6559fb5c009ca *R/cv.panel.sglfit.R
 b26668c540fba35aa89474fb32d21c27 *R/cv.sglfit.R
@@ -59,7 +59,7 @@ b36b509c765ce76296ab2ac7687b08e0 *man/reg.sgl.Rd
 b0cace8ad9980c41a410ded7f92410f3 *man/sglfit.Rd
 662d6acd3d1b867d53986086931ed65e *man/us_rgdp.Rd
 986965010d01d44bd513f4ec1b27c0b6 *src/auxiliary.f90
-4826747877351d7de47dfde62596baff *src/maxlambda.f90
+9d4a65789c65bad19258edc3464108ad *src/maxlambda.f90
 6b96d0f3abf6b40dd9b8f0d77e9a7eca *src/midasml_init.c
 a311c8a28fe48b2123288ea1e36065fd *src/panelsglfitF.f90
-a2e73467db982b8b5a6b34959ad1cedc *src/sglfitF.f90
+2be2f4f90491654f9f217b15cbf3678b *src/sglfitF.f90

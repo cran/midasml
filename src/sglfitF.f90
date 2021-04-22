@@ -80,20 +80,21 @@ END SUBROUTINE sglfitF
 SUBROUTINE sglfitpathF(maj, gamma, ngroups, gindex, nobs, nvars, x, y, ju, pf, dfmax, &
 & pmax, nlam, flmin, ulam, eps, peps, maxit, nalam, b0, beta, m, nbeta, alam, &
 & npass, jerr, intr)
+
   IMPLICIT NONE
   ! -------- INPUT VARIABLES -------- !
   INTEGER :: mnl, nobs, nvars, dfmax, pmax, nlam, maxit, nalam, npass, jerr, intr, ngroups
   INTEGER :: ju(nvars), m(pmax), nbeta(nlam), gindex(ngroups)
   DOUBLE PRECISION :: eps, gamma, peps, steps(ngroups)
   DOUBLE PRECISION :: x(nobs, nvars), y(nobs), maj(nvars)
-  DOUBLE PRECISION :: pf(nvars), tmp
+  DOUBLE PRECISION :: pf(nvars)
   DOUBLE PRECISION :: beta(pmax, nlam), b0(nlam)
   DOUBLE PRECISION :: ulam(nlam), alam(nlam)
   ! -------- LOCAL DECLARATIONS -------- !
   INTEGER,  PARAMETER :: mnlam = 6
   DOUBLE PRECISION :: d, dif, oldb, u, al, flmin
   DOUBLE PRECISION,  DIMENSION(:), ALLOCATABLE :: b, oldbeta, r
-  DOUBLE PRECISION :: gw
+  DOUBLE PRECISION :: gw, tmp, NORM2
   INTEGER :: gstart, gend
   INTEGER :: k, j, l, g, vrg, ctr, ierr, ni, me, pln
   INTEGER :: gs, gj, skip
@@ -419,7 +420,7 @@ SUBROUTINE prox_sgl(gstart, gend, nvars, nobs, x, r, b, al, gamma, pf, peps, gw,
     DOUBLE PRECISION :: x(nobs,nvars), r(nobs), b(nvars), al, gamma, pf(nvars), peps, gw, step
     ! -------- LOCAL DECLARATIONS -------- !
     INTEGER :: g
-    DOUBLE PRECISION :: u, v, scl, tmp, maxg, normg, d, bold(nvars), vg, big = 9.9D30, s
+    DOUBLE PRECISION :: u, v, scl, tmp, maxg, normg, d, bold(nvars), vg, big = 9.9D30, s, NORM2
     s = step
     ! -------- BEGIN PROGRAM -------- !
     DO
@@ -440,6 +441,7 @@ SUBROUTINE prox_sgl(gstart, gend, nvars, nobs, x, r, b, al, gamma, pf, peps, gw,
         !--------- g-LASSO PART ----------!
         ! L2 norm of b_g
         normg = NORM2(b(gstart:gend))
+        !normg = SQRT(DOT_PRODUCT(b(gstart:gend), b(gstart:gend)))
         ! Initialize storage vars
         maxg = 0.0D0
         vg = s * gw * al * (1.0D0-gamma)/normg
