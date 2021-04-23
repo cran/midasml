@@ -1,4 +1,4 @@
-452d078654597505bd17142d6b1ed39a *DESCRIPTION
+25955274460ab1907294f00ddff1560f *DESCRIPTION
 31352510f46b5f7ca35ff1395dd39b94 *NAMESPACE
 61e8db2d6fd76e5ffee6559fb5c009ca *R/cv.panel.sglfit.R
 b26668c540fba35aa89474fb32d21c27 *R/cv.sglfit.R
@@ -15,7 +15,7 @@ ea9827774acae80b64ba8971a466c015 *R/predict.sglpath.R
 496dc53e874f2e5c1f7bfea89e5367a6 *R/reg.midas.R
 c1d015aa42c96bebad0ef22982c37401 *R/reg.panel.sgl.R
 7b416855ad8c4fe4c4643a39b9cc180f *R/reg.sgl.R
-b453672a8453da32951da421a57888bc *R/sglfit.R
+e201cbb062eba172c7fa333a0990b593 *R/sglfit.R
 486eebabfc09caa9b2b3bc3661e1d2a6 *R/sglfitpath.R
 80d496d12684dee5a221f7d73dbbd245 *R/utilities.R
 69d82ee371d5b3157f6ce729aa0b662c *README.md
@@ -56,10 +56,10 @@ f28287521255b62d98107ee0f218fce8 *man/predict.ic.sglfit.Rd
 b36b509c765ce76296ab2ac7687b08e0 *man/reg.sgl.Rd
 74fab0138371b4e99b4d452e809f61ec *man/rgdp_dates.Rd
 46caa0903e268d8fdb52713991b2f620 *man/rgdp_vintages.Rd
-b0cace8ad9980c41a410ded7f92410f3 *man/sglfit.Rd
+1f29b1bbbfd40db6aff1247a8cf6a74a *man/sglfit.Rd
 662d6acd3d1b867d53986086931ed65e *man/us_rgdp.Rd
 986965010d01d44bd513f4ec1b27c0b6 *src/auxiliary.f90
-9d4a65789c65bad19258edc3464108ad *src/maxlambda.f90
+4826747877351d7de47dfde62596baff *src/maxlambda.f90
 6b96d0f3abf6b40dd9b8f0d77e9a7eca *src/midasml_init.c
 a311c8a28fe48b2123288ea1e36065fd *src/panelsglfitF.f90
-2be2f4f90491654f9f217b15cbf3678b *src/sglfitF.f90
+563c0c9c9b92a269a526411d13919d65 *src/sglfitF.f90
