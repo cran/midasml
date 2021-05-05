@@ -1,11 +1,11 @@
-25955274460ab1907294f00ddff1560f *DESCRIPTION
+20f6904061215b876d3330946193e1b1 *DESCRIPTION
 31352510f46b5f7ca35ff1395dd39b94 *NAMESPACE
 61e8db2d6fd76e5ffee6559fb5c009ca *R/cv.panel.sglfit.R
 b26668c540fba35aa89474fb32d21c27 *R/cv.sglfit.R
 1999729afb19e6d3bd4681f0c88947ff *R/data.R
-cbcbfe21df8ee63439639860ce5033f7 *R/date.functions.R
-c17dd1734fed763809f1f0f08a960b4c *R/ic.panel.sglfit.R
-5e30ec9be0e17e15b475c18414befa33 *R/ic.sglfit.R
+cc4f2d5df270e48b7ac2a3caeacad021 *R/date.functions.R
+f70e5283461f358fdb513f63a70137a0 *R/ic.panel.sglfit.R
+f3d942dc84a1f11c96cab56c1b9c0f9f *R/ic.sglfit.R
 106adfe99cfeccd98c92426bafe6d29b *R/midas.polynomials.R
 70899771d28a17f22d74078f02426104 *R/midas.solvers.R
 4de84a9438ad59a4c88260f10d8fac98 *R/midasml-package.R
@@ -18,7 +18,7 @@ c1d015aa42c96bebad0ef22982c37401 *R/reg.panel.sgl.R
 e201cbb062eba172c7fa333a0990b593 *R/sglfit.R
 486eebabfc09caa9b2b3bc3661e1d2a6 *R/sglfitpath.R
 80d496d12684dee5a221f7d73dbbd245 *R/utilities.R
-69d82ee371d5b3157f6ce729aa0b662c *README.md
+91041d4414f9c40da3399192ad660909 *README.md
 90998e0b052a9a3597aa571d9d4aeae2 *data/alfred_vintages.rda
 be441dc63b79f323effaa66a2c66cb14 *data/market_ret.rda
 873a8d27e6de0696790aaa95aa1e8f81 *data/rgdp_dates.rda
@@ -42,8 +42,8 @@ b9cca7f4c8ebae06b71bff02c624020c *man/gb.Rd
 83dcb637839d4553c338f78d514c0447 *man/market_ret.Rd
 ac8cc83d4b06e304b9c2cc37134b7275 *man/midas.ardl.Rd
 03f3e59ed4c471de88338fdffc1c60a5 *man/midasml-package.Rd
-357775e88b00ae083c9ed7848e958eb7 *man/mixed_freq_data.Rd
-9c2c4f0143c1cc39c89cc23e31363a39 *man/mixed_freq_data_single.Rd
+71c45ecee20ab5cd3df35841aa486038 *man/mixed_freq_data.Rd
+69642fc999c9d94e32643c0bda9c2cfb *man/mixed_freq_data_single.Rd
 e478ebe83c6db3527fd90d29e41e4bc8 *man/mode_midasml.Rd
 c2ba6ecb52af2183982bc6610d6ae278 *man/monthBegin.Rd
 b7ddcf3be97e30a2b9fbc4c0dc550068 *man/monthEnd.Rd

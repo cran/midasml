@@ -1,5 +1,3 @@
-# midasml
-
 midasml - Estimation and Prediction Methods for High-Dimensional Mixed Frequency Time Series Data
 
 ## About
@@ -15,10 +13,10 @@ The package is equipped with the fast implementation of the sparse-group LASSO e
 ## Run to install the package
 
 ```{r }
-# CRAN version
-install.packages("midasml")
+# CRAN version - 0.1.4
+install.packages("midasml") 
 
-# Development version
+# Development version - 0.1.4
 # install.packages("devtools")
 library(devtools)
 install_github("jstriaukas/midasml")
