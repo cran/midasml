@@ -9,7 +9,7 @@ reg.sgl(x, y, gamma = NULL, gindex, intercept = TRUE,
         verbose = FALSE, ...)
 }
 \arguments{
-\item{x}{T by p data matrix, where t and p respectively denote the sample size and the number of regressors.}
+\item{x}{T by p data matrix, where T and p respectively denote the sample size and the number of regressors.}
 
 \item{y}{T by 1 response variable.}
 

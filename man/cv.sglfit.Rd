@@ -8,7 +8,7 @@ cv.sglfit(x, y, lambda = NULL, gamma = 1.0, gindex = 1:p,
   nfolds = 10, foldid, parallel = FALSE, ...)
 }
 \arguments{
-\item{x}{T by p data matrix, where t and p respectively denote the sample size and the number of regressors.}
+\item{x}{T by p data matrix, where T and p respectively denote the sample size and the number of regressors.}
 
 \item{y}{T by 1 response variable.}
 
@@ -24,7 +24,7 @@ cv.sglfit(x, y, lambda = NULL, gamma = 1.0, gindex = 1:p,
 
 \item{parallel}{if \code{TRUE}, use parallel foreach to fit each fold. Must register parallel before hand, such as doMC or others. See the example below.}
 
-\item{...}{Other arguments that can be passed to \code{sglfit}.}
+\item{...}{Other arguments that can be passed to \link{sglfit}.}
 }
 \value{
 cv.sglfit object.
@@ -32,7 +32,7 @@ cv.sglfit object.
 \description{
 Does k-fold cross-validation for sg-LASSO regression model.
 
-The function runs \code{sglfit} \code{nfolds+1} times; the first to get the path solution in \ifelse{html}{\out{&lambda;}}{\eqn{\lambda}} sequence, the rest to compute the fit with each of the folds omitted. 
+The function runs \link{sglfit} \code{nfolds+1} times; the first to get the path solution in \ifelse{html}{\out{&lambda;}}{\code{lambda}} sequence, the rest to compute the fit with each of the folds omitted. 
 The average error and standard deviation over the folds is computed, and the optimal regression coefficients are returned for \code{lam.min} and \code{lam.1se}. Solutions are computed for a fixed \ifelse{html}{\out{&gamma;}}{\eqn{\gamma}.}
 }
 \details{
@@ -58,7 +58,7 @@ gindex = sort(rep(1:4,times=5))
 system.time(cv.sglfit(x = x, y = y, gindex = gindex, gamma = 0.5, 
   standardize = FALSE, intercept = FALSE))
 system.time(cv.sglfit(x = x, y = y, gindex = gindex, gamma = 0.5, 
-  standardize = FALSE, intercept = FALSE))
+  standardize = FALSE, intercept = FALSE, parallel = TRUE))
 }
 }
 }
