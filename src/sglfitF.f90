@@ -134,14 +134,6 @@ SUBROUTINE sglfitpathF(maj, gamma, ngroups, gindex, nobs, nvars, x, y, ju, pf, d
         al = ulam(l)
         ctr = 0
         pln = 0
-        IF (intr == 1) THEN
-            IF (l == 1) THEN
-                b(0) = SUM(y)/nobs
-            ELSE
-                b(0) = b0(l-1)
-            END IF
-
-        END IF
         ! ------------------ OUTER LOOP -------------------- !
         DO
             IF (intr == 1) oldbeta(0) = b(0)
@@ -201,12 +193,11 @@ SUBROUTINE sglfitpathF(maj, gamma, ngroups, gindex, nobs, nvars, x, y, ju, pf, d
                     oldb = oldbeta(0)
                     u = 0.0D0
                     DO ! BEGIN GRADIENT DESCENT
-                        d = SUM(r)/nobs
-                        IF (d**2 < eps) EXIT
-                        u = u + d
-                        r = r - d
+                      d = SUM(r)/nobs
+                      IF (d**2 < eps) EXIT
+                      b(0) = b(0) + d
+                      r = r - d
                     END DO ! END GRADIENT DESCENT
-                    b(0) = u
                     d = b(0) - oldb
                     IF (ABS(d) > 0.0D0) dif = MAX(dif, d**2)
                 END IF
