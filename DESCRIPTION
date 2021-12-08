@@ -2,7 +2,7 @@ Package: midasml
 Type: Package
 Title: Estimation and Prediction Methods for High-Dimensional Mixed
         Frequency Time Series Data
-Version: 0.1.6
+Version: 0.1.7
 Authors@R: c(
     person("Jonas", "Striaukas",  role = c("cre","aut"), email =  "jonas.striaukas@gmail.com"),
     person("Andrii", "Babii",  role = c("aut"), 
@@ -16,15 +16,16 @@ Description: The 'midasml' package implements estimation and prediction methods 
 BugReports: https://github.com/jstriaukas/midasml/issues
 License: GPL (>= 2)
 Depends: Matrix, R (>= 3.5.0)
-Imports: foreach, graphics, mcGlobaloptim, methods, lubridate, stats
+Imports: doRNG, doParallel, foreach, graphics, mcGlobaloptim, methods,
+        lubridate, stats
 Encoding: UTF-8
 RoxygenNote: 7.1.2
 NeedsCompilation: yes
-Packaged: 2021-11-30 13:59:50 UTC; Utilisateur
+Packaged: 2021-12-08 12:24:45 UTC; Utilisateur
 Author: Jonas Striaukas [cre, aut],
   Andrii Babii [aut],
   Eric Ghysels [aut],
   Alex Kostrov [ctb] (Contributions to analytical gradients for
     non-linear low-dimensional MIDAS estimation code)
 Repository: CRAN
-Date/Publication: 2021-11-30 14:30:05 UTC
+Date/Publication: 2021-12-08 13:00:04 UTC

@@ -36,13 +36,11 @@ Nonlinear polynomial optimization routines are equipped with analytical gradient
 \ifelse{html}{\out{Several polynomial functional forms are available (<code>poly_choice</code>): <br><br> - <code>beta</code>: Beta polynomial</center> <br> - <code>expalmon</code>: exponential Almon polynomial <br> - <code>legendre</code>: Legendre polynomials. <br> <br> The ARDL-MIDAS model is: <br> <center> y<sub>t</sub> =  &mu; + &Sigma;<sub>p</sub> &rho;<sub>p</sub> y<sub>t-p</sub> + &beta;  &Sigma;<sub>j</sub> &omega;<sub>j</sub>(&theta;)x<sub>t-1</sub> </center> <br> where &mu;, &beta;, &theta; and  &rho;<sub>p</sub> are model parameters, p is the number of low-frequency lags and &omega; is the weight function.}}{Several polynomial functional forms are available (\code{poly_choice}): \cr  - \code{beta}: Beta polynomial  \cr - \code{expalmon}: Exp Almon polynomial \cr - \code{legendre}: Legendre polynomials. \cr\cr The ARDL-MIDAS model is: \cr \deqn{y_t =  \mu + \sum_p \rho_p y_{t-p} + \beta \sum_j \omega_j(\theta)x_{t-1}} \cr where \eqn{\mu}, \eqn{\beta}, \eqn{\theta}, \eqn{\rho_p}  are model parameters, p is number of low-frequency and \eqn{\omega} is the weight function.}
 }
 \examples{
-\donttest{ 
 set.seed(1)
 x = matrix(rnorm(100 * 20), 100, 20)
 z = rnorm(100)
 y = rnorm(100)
 midas.ardl(y = y, x = x, z = z)
-}
 }
 \author{
 Jonas Striaukas

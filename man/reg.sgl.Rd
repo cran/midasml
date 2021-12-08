@@ -5,8 +5,7 @@
 \title{Fit for sg-LASSO regression}
 \usage{
 reg.sgl(x, y, gamma = NULL, gindex, intercept = TRUE, 
-        method_choice = c("ic","cv"), nfolds = 10, 
-        verbose = FALSE, ...)
+        method_choice = c("tscv","ic","cv"), verbose = FALSE, ...)
 }
 \arguments{
 \item{x}{T by p data matrix, where T and p respectively denote the sample size and the number of regressors.}
@@ -19,9 +18,7 @@ reg.sgl(x, y, gamma = NULL, gindex, intercept = TRUE,
 
 \item{intercept}{whether intercept be fitted (\code{TRUE}) or set to zero (\code{FALSE}). Default is \code{TRUE}.}
 
-\item{method_choice}{choose between \code{ic} and \code{cv}. \code{ic} gives fit based on information criteria (BIC, AIC or AICc) by running \code{ic.fit}, while \code{cv} gives fit based on cross-validation by running \code{cv.sglfit}. If \code{cv} is chosen, optional number of folds \code{nfolds} can be supplied.}
-
-\item{nfolds}{number of folds of the cv loop. Default set to \code{10}.}
+\item{method_choice}{choose between \code{tscv} \code{ic} and \code{cv}. \code{tscv} fits sg-LASSO based on time series cross-validation (see \link{tscv.sglfit}), \code{ic} fits sg-LASSO based on information criteria (BIC, AIC or AICc, see \link{ic.sglfit}), \code{cv} fits sg-LASSO based on cross-validation (see \link{cv.sglfit}). Additional arguments for each method choice are passed on to the relevant functions.}
 
 \item{verbose}{flag to print information.}
 
@@ -39,15 +36,12 @@ The function fits sg-LASSO regression based on chosen tuning parameter selection
 \ifelse{html}{\out{The sequence of linear regression models implied by &lambda; vector is fit by block coordinate-descent. The objective function is  <br><br> <center> ||y - &iota;&alpha; - x&beta;||<sup>2</sup><sub>T</sub> + 2&lambda;  &Omega;<sub>&gamma;</sub>(&beta;), </center> <br> where &iota;&#8712;R<sup>T</sup>enter> and ||u||<sup>2</sup><sub>T</sub>=&#60;u,u&#62;/T is the empirical inner product. The penalty function &Omega;<sub>&gamma;</sub>(.) is applied on  &beta; coefficients and is <br> <br> <center> &Omega;<sub>&gamma;</sub>(&beta;) = &gamma; |&beta;|<sub>1</sub> + (1-&gamma;)|&beta;|<sub>2,1</sub>, </center> <br> a convex combination of LASSO and group LASSO penalty functions.}}{The sequence of linear regression models implied by \eqn{\lambda} vector is fit by block coordinate-descent. The objective function is \deqn{\|y-\iota\alpha - x\beta\|^2_{T} + 2\lambda \Omega_\gamma(\beta),} where \eqn{\iota\in R^T} and \eqn{\|u\|^2_T = \langle u,u \rangle / T} is the empirical inner product. The penalty function \eqn{\Omega_\gamma(.)} is applied on \eqn{\beta} coefficients and is \deqn{\Omega_\gamma(\beta) = \gamma |\beta|_1 + (1-\gamma)|\beta|_{2,1},} a convex combination of LASSO and group LASSO penalty functions.}
 }
 \examples{
-\donttest{ 
 set.seed(1)
 x = matrix(rnorm(100 * 20), 100, 20)
 beta = c(5,4,3,2,1,rep(0, times = 15))
 y = x\%*\%beta + rnorm(100)
 gindex = sort(rep(1:4,times=5))
-reg.sgl(x = x, y = y, gindex = gindex, gamma = 0.5,
-  standardize = FALSE, intercept = FALSE)
-}
+reg.sgl(x = x, y = y, gamma = 0.5, gindex = gindex)
 }
 \author{
 Jonas Striaukas
