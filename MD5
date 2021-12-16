@@ -1,11 +1,11 @@
-1aebf4529bcdbaa7d24a6cc7b3d8cc93 *DESCRIPTION
+40336b5e3b53e3388c2bc4e6e6e6893e *DESCRIPTION
 c8f6e8575f6b948abe1bdf5a15daf809 *NAMESPACE
 35268e5d9f39f8988cedf821351b3e8c *R/cv.panel.sglfit.R
-7487f22e5c0b80e6b0de99d80ebce257 *R/cv.sglfit.R
+3a8c591042ceea790b17e3a947454836 *R/cv.sglfit.R
 360e91c666e09937e76ca4b24981bac7 *R/data.R
 3b3e6ce25cfb92572b45b6961b53fd3a *R/date.functions.R
 882990811c367b3e1030d14512332215 *R/ic.panel.sglfit.R
-e2e793a6048f38a8efdbcc6ca4478c8e *R/ic.sglfit.R
+b6762d5b871789149d5565253481b20a *R/ic.sglfit.R
 633a7db00e51921f56c1940f9bbfc0cc *R/midas.polynomials.R
 9907e76c9422d9cb0b06accfe97386ad *R/midas.solvers.R
 05fff734385824782dcd5822409c8acb *R/midasml-package.R
@@ -14,11 +14,11 @@ e2e793a6048f38a8efdbcc6ca4478c8e *R/ic.sglfit.R
 ad455ee58f90629af55dafac611e0925 *R/predict.sglpath.R
 74c12b0fa522cc7d2ef69967a257f28b *R/reg.midas.R
 8e83f4b376436c00f4e2b66c8ca11939 *R/reg.panel.sgl.R
-86fdcc6f477fa90ba41a51d170b6fb44 *R/reg.sgl.R
+1c1eccbfb7b9ad03a57e4a4c75fa653d *R/reg.sgl.R
 328a66480509d0807bb67d7afc9f3f4a *R/sglfit.R
 a484805bf325ce3027f3f55e4aaab06e *R/sglfitpath.R
 1fdf096b401db09a9fbbf199eceab1c1 *R/thetafit.R
-df41358c53a7174420b98688670e404a *R/tscv.sglfit.R
+cfcfb4c494fec0c5ef6cc766aba60b91 *R/tscv.sglfit.R
 8a30f3630ba23128594e4f0c6af3c5e0 *R/utilities.R
 90998e0b052a9a3597aa571d9d4aeae2 *data/alfred_vintages.rda
 be441dc63b79f323effaa66a2c66cb14 *data/market_ret.rda
@@ -59,7 +59,7 @@ f513243478361a6b29541454fefce89a *man/reg.sgl.Rd
 46caa0903e268d8fdb52713991b2f620 *man/rgdp_vintages.Rd
 9d84bb908de5956d6634dbbd2274a23f *man/sglfit.Rd
 07e96878eeadd72ccdc80a7442eaea26 *man/thetafit.Rd
-47b3db50ea88195c55f9e2e69522df4f *man/tscv.sglfit.Rd
+e8c26c1fc5b66941cbe1e29f23b073c4 *man/tscv.sglfit.Rd
 08c3e091c07c3affcc31c1596719081a *man/tscv.sglpath.Rd
 662d6acd3d1b867d53986086931ed65e *man/us_rgdp.Rd
 47348a671ae419ff94ebcb9b1f8c3221 *src/auxiliary.f90

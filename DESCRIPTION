@@ -2,7 +2,7 @@ Package: midasml
 Type: Package
 Title: Estimation and Prediction Methods for High-Dimensional Mixed
         Frequency Time Series Data
-Version: 0.1.7
+Version: 0.1.8
 Authors@R: c(
     person("Jonas", "Striaukas",  role = c("cre","aut"), email =  "jonas.striaukas@gmail.com"),
     person("Andrii", "Babii",  role = c("aut"), 
@@ -21,11 +21,11 @@ Imports: doRNG, doParallel, foreach, graphics, mcGlobaloptim, methods,
 Encoding: UTF-8
 RoxygenNote: 7.1.2
 NeedsCompilation: yes
-Packaged: 2021-12-08 12:24:45 UTC; Utilisateur
+Packaged: 2021-12-16 08:44:59 UTC; Utilisateur
 Author: Jonas Striaukas [cre, aut],
   Andrii Babii [aut],
   Eric Ghysels [aut],
   Alex Kostrov [ctb] (Contributions to analytical gradients for
     non-linear low-dimensional MIDAS estimation code)
 Repository: CRAN
-Date/Publication: 2021-12-08 13:00:04 UTC
+Date/Publication: 2021-12-16 09:00:02 UTC

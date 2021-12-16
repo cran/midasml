@@ -18,9 +18,9 @@ tscv.sglfit(x, y, lambda = NULL, gamma = 1.0, gindex = 1:p,
 
 \item{gindex}{p by 1 vector indicating group membership of each covariate.}
 
-\item{K}{number of folds of the cv loop. Default set to \code{20}.}
+\item{K}{number of observations drawn for the test set. Default set to \code{20}.}
 
-\item{l}{the gap used to drop observations round test set data. For each test observation (in total K), we drop 2l observations such that the test observation at time t is separated by \code{l} observations. Default set to \code{5}.}
+\item{l}{the gap used to drop observations round the test set data point. Default set to \code{5}.}
 
 \item{parallel}{if \code{TRUE}, use parallel foreach to fit each fold. Must register parallel before hand, such as doMC or others. See the example below.}
 
@@ -34,7 +34,7 @@ tscv.sglfit object.
 \description{
 Does k-fold time series cross-validation for sg-LASSO regression model.
 
-The function runs \link{sglfit} \code{nfolds+1} times; the first to get the path solution in \ifelse{html}{\out{&lambda;}}{\code{lambda}} sequence, the rest to compute the fit with each of the folds omitted. 
+The function runs \link{sglfit} \code{K+1} times; the first to get the path solution in \ifelse{html}{\out{&lambda;}}{\code{lambda}} sequence, the rest to compute the fit with each of the test observation \ifelse{html}{\out{k &isin; K}}{\eqn{k \in K}.} 
 The average error and standard deviation over the folds is computed, and the optimal regression coefficients are returned for \code{lam.min} and \code{lam.1se}. Solutions are computed for a fixed \ifelse{html}{\out{&gamma;}}{\eqn{\gamma}.}
 }
 \details{
