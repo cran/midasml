@@ -2,7 +2,7 @@
 % Please edit documentation in R/thetafit.R
 \name{thetafit}
 \alias{thetafit}
-\title{Nodewise LASSO regressions to fit the precision matrix \ifelse{html}{\out{&Theta;}}{\eqn{\Theta}}.}
+\title{Nodewise LASSO regressions to fit the precision matrix \ifelse{html}{\out{&Theta;}}{\eqn{\Theta}}}
 \usage{
 thetafit(x, parallel = FALSE, ncores = getOption("mc.cores", NULL), 
          intercept = FALSE, K = 20, l = 5, seed = NULL, verbose = FALSE, 

@@ -1,4 +1,4 @@
-40336b5e3b53e3388c2bc4e6e6e6893e *DESCRIPTION
+76cca901ba092d0a2db6097d70dfcd4f *DESCRIPTION
 c8f6e8575f6b948abe1bdf5a15daf809 *NAMESPACE
 35268e5d9f39f8988cedf821351b3e8c *R/cv.panel.sglfit.R
 3a8c591042ceea790b17e3a947454836 *R/cv.sglfit.R
@@ -14,10 +14,10 @@ b6762d5b871789149d5565253481b20a *R/ic.sglfit.R
 ad455ee58f90629af55dafac611e0925 *R/predict.sglpath.R
 74c12b0fa522cc7d2ef69967a257f28b *R/reg.midas.R
 8e83f4b376436c00f4e2b66c8ca11939 *R/reg.panel.sgl.R
-1c1eccbfb7b9ad03a57e4a4c75fa653d *R/reg.sgl.R
+ea59976e9619425ce77248f5088ed735 *R/reg.sgl.R
 328a66480509d0807bb67d7afc9f3f4a *R/sglfit.R
 a484805bf325ce3027f3f55e4aaab06e *R/sglfitpath.R
-1fdf096b401db09a9fbbf199eceab1c1 *R/thetafit.R
+b8905c97cb5a21ffcaff15fd276072f4 *R/thetafit.R
 cfcfb4c494fec0c5ef6cc766aba60b91 *R/tscv.sglfit.R
 8a30f3630ba23128594e4f0c6af3c5e0 *R/utilities.R
 90998e0b052a9a3597aa571d9d4aeae2 *data/alfred_vintages.rda
@@ -58,7 +58,7 @@ f513243478361a6b29541454fefce89a *man/reg.sgl.Rd
 74fab0138371b4e99b4d452e809f61ec *man/rgdp_dates.Rd
 46caa0903e268d8fdb52713991b2f620 *man/rgdp_vintages.Rd
 9d84bb908de5956d6634dbbd2274a23f *man/sglfit.Rd
-07e96878eeadd72ccdc80a7442eaea26 *man/thetafit.Rd
+5fcc653ad5a939d16e52b3b9e3039d77 *man/thetafit.Rd
 e8c26c1fc5b66941cbe1e29f23b073c4 *man/tscv.sglfit.Rd
 08c3e091c07c3affcc31c1596719081a *man/tscv.sglpath.Rd
 662d6acd3d1b867d53986086931ed65e *man/us_rgdp.Rd
