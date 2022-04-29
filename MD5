@@ -1,5 +1,5 @@
-53dd87c642f54fed5adee164675d10da *DESCRIPTION
-c8f6e8575f6b948abe1bdf5a15daf809 *NAMESPACE
+bd4fe32e6a38a523fb9441891a3bfa24 *DESCRIPTION
+1c10c34c87d7f42393bb1cebab249999 *NAMESPACE
 4b09e8af862f1398c5fa542323993b10 *R/cv.panel.sglfit.R
 ed9e836f5f463a5155fb94ab9af954f2 *R/cv.sglfit.R
 360e91c666e09937e76ca4b24981bac7 *R/data.R
@@ -7,7 +7,7 @@ ed9e836f5f463a5155fb94ab9af954f2 *R/cv.sglfit.R
 d23f2b1c23e61ad0999fa9fd1066e0e9 *R/ic.panel.sglfit.R
 3dd69467c5ca2026989125804dc5437a *R/ic.sglfit.R
 633a7db00e51921f56c1940f9bbfc0cc *R/midas.polynomials.R
-9907e76c9422d9cb0b06accfe97386ad *R/midas.solvers.R
+d116ba633c4be9b6d4b7e295f1e7e813 *R/midas.solvers.R
 05fff734385824782dcd5822409c8acb *R/midasml-package.R
 1c757bb1725d26bc59fea92414289d01 *R/predict.cv.sglfit.R
 7a2eb5dc3f8042e96fa3c70d83876b04 *R/predict.ic.sglfit.R
